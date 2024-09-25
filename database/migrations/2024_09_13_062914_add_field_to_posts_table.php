@@ -12,10 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('posts', function (Blueprint $table) {
-            $table->string('slug');
+            $table->string('slug')->default('testing');
           
         });
     }
+    
 
     /**
      * Reverse the migrations.
